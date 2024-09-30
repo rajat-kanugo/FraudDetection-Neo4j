@@ -4,26 +4,6 @@ Tool Used:Neo4j
 This interactive Neo4j graph tutorial covers bank fraud detection scenarios.
 
 '''
-
-*Table of Contents*
-
-* *Introduction*
-** <<introduction_to_problem, Introduction to Problem>>
-* *Scenario*
-** <<explanation of scenario, Explanation of Scenario>>
-** <<typical_scenario, Typical Scenario>>
-* *Solution*
-** <<explanation_of_solution, Explanation of Solution>>
-** <<how_graph_databases_can_help, How Graph Databases Can Help>>
-* *Data Model*
-** <<bank_fraud_data_model, Bank Fraud Graph Data Model>>
-* *Database Setup*
-** <<sample_data_set, Sample Data Set>>
-* *Cypher Queries*
-** <<entity_link_analysis, Entity Link Analysis>>
-** <<find_account_holders_who_share_more_than_one_piece_of_legitimate_contact_information, Find account holders who share more than one piece of legitimate contact information>>
-** <<determine_the_financial_risk_of_a_possible_fraud_ring , Determine the financial risk of a possible fraud ring>>
-
 '''
 
 == Introduction to Problem
