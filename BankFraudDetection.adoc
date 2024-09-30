@@ -210,7 +210,7 @@ ORDER BY 	FinancialRisk DESC
 
 [source,cypher]
 ----
-===Analyze Total Balance of Fraud Rings
+=== Analyze Total Balance of Fraud Rings
 
 MATCH (accountHolder:AccountHolder)-[]->(contactInformation) 
 WITH contactInformation, count(accountHolder) AS RingSize 
@@ -229,7 +229,7 @@ ORDER BY TotalBalance DESC
 
 [source,cypher]
 ----
-===Analyze Average Loan Amount of Fraud Rings
+=== Analyze Average Loan Amount of Fraud Rings
 
 MATCH (accountHolder:AccountHolder)-[]->(contactInformation) 
 WITH contactInformation, count(accountHolder) AS RingSize 
@@ -248,7 +248,7 @@ ORDER BY AverageLoanAmount DESC
 
 [source,cypher]
 ----
-===Visualize Connections Between Fraud Rings and Their Financial Products
+=== Visualize Connections Between Fraud Rings and Their Financial Products
 MATCH (accountHolder:AccountHolder)-[]->(contactInformation) 
 WITH contactInformation, count(accountHolder) AS RingSize 
 MATCH (contactInformation)<-[]-(accountHolder)-[r:HAS_CREDITCARD|HAS_UNSECUREDLOAN|HAS_BANKACCOUNT]->(financialProduct)
@@ -268,7 +268,7 @@ ORDER BY RingSize DESC
 
 [source,cypher]
 ----	
-===Determine Total Credit Limits Across Fraud Rings
+=== Determine Total Credit Limits Across Fraud Rings
 
 MATCH (accountHolder:AccountHolder)-[]->(contactInformation) 
 WITH contactInformation, count(accountHolder) AS RingSize 
