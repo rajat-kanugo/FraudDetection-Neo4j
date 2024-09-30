@@ -9,45 +9,45 @@ This interactive Neo4j graph tutorial covers bank fraud detection scenarios.
 == Introduction to Problem
 
 
-Banks and Insurance companies lose billions of dollars every year to fraud. Traditional methods of fraud detection play an important role in minimizing these losses. However increasingly sophisticated fraudsters have developed a variety of ways to elude discovery, both by working together, and by leveraging various other means of constructing false identities. 
+Banks and insurance companies lose billions of dollars every year to fraud. Traditional methods of fraud detection play an important role in minimizing these losses. However, increasingly sophisticated fraudsters have developed a variety of ways to elude discovery, often working together and leveraging various means to construct false identities.
 
 '''
 
 == Explanation of Scenario
 
-While no fraud prevention measures can ever be perfect, significant opportunity for improvement lies in looking beyond the individual data points, to the connections that link them. Oftentimes these connections go unnoticed until it is too late— something that is unfortunate, as these connections oftentimes hold the best clues.
+While no fraud prevention measures can ever be perfect, significant opportunities for improvement lie in looking beyond individual data points to the connections that link them. Oftentimes, these connections go unnoticed until it is too late—unfortunate, as they often hold the best clues.
 
 === Typical Scenario
 
-While the exact details behind each first-party fraud collusion vary from operation to operation, the pattern below illustrates how fraud rings commonly operate:
+While the exact details behind each instance of first-party fraud collusion vary, the pattern below illustrates how fraud rings commonly operate:
 
-* A group of two or more people organize into a fraud ring
-* The ring shares a subset of legitimate contact information, for example phone numbers and addresses, combining them to create a number of synthetic identities
-* Ring members open accounts using these synthetic identities 
+* A group of two or more people organizes into a fraud ring.
+* The ring shares a subset of legitimate contact information, such as phone numbers and addresses, combining them to create several synthetic identities.
+* Ring members open accounts using these synthetic identities.
 * New accounts are added to the original ones: unsecured credit lines, credit cards, overdraft protection, personal loans, etc. 
-* The accounts are used as normally, with regular purchases and timely payments
-* Banks increase the revolving credit lines over time, due to the observed responsible credit behavior 
-* One day the ring “busts out”, coordinating their activity, maxing out all of their credit lines, and disappearing
-* Sometimes fraudsters will go a step further and bring all of their balances to zero using fake checks immediately before the prior step, doubling the damage
-* Collections processes ensue, but agents are never able to reach the fraudster
-* The uncollectible debt is written off
+* The accounts are used normally, with regular purchases and timely payments.
+* Banks increase the revolving credit lines over time due to the observed responsible credit behavior.
+* One day, the ring "busts out," coordinating their activities, maxing out all credit lines, and disappearing.
+* Sometimes, fraudsters will go a step further, bringing all their balances to zero using fake checks immediately before the prior step, doubling the damage.
+* Collections processes ensue, but agents are never able to reach the fraudsters.
+* The uncollectible debt is written off.
 
 '''
 
 == Explanation of Solution
 
-Graph databases offer new methods of uncovering fraud rings and other sophisticated scams with a high-level of accuracy, and are capable of stopping advanced fraud scenarios in real-time.
+Graph databases offer new methods for uncovering fraud rings and other sophisticated scams with a high level of accuracy, capable of stopping advanced fraud scenarios in real time.
 
 === How Graph Databases Can Help
 
-Augmenting one’s existing fraud detection infrastructure to support ring detection can be done by running appropriate entity link analysis queries using a graph database, and running checks during key stages in the customer & account lifecycle, such as:
+Augmenting existing fraud detection infrastructure to support ring detection can be achieved by running appropriate entity link analysis queries using a graph database. This can occur during key stages in the customer and account lifecycle, such as:
 
 * At the time the account is created
 * During an investigation
 * As soon as a credit balance threshold is hit
-* When a check is bounced
+* When a check bounces
 
-Real-time graph traversals tied to the right kinds of events can help banks identify probable fraud rings: during or even before the Bust-Out occurs.
+Real-time graph traversals tied to the right kinds of events can help banks identify probable fraud rings during or even before the bust-out occurs.
 
 '''
 
