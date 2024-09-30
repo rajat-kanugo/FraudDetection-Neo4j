@@ -166,6 +166,7 @@ Performing entity link analysis on the above data model is demonstrated below.
 
 [source,cypher]
 ----
+
 MATCH 		(accountHolder:AccountHolder)-[]->(contactInformation) 
 WITH 		contactInformation, 
 			count(accountHolder) AS RingSize 
@@ -186,6 +187,7 @@ ORDER BY 	RingSize DESC
 
 [source,cypher]
 ----
+
 MATCH 		(accountHolder:AccountHolder)-[]->(contactInformation) 
 WITH 		contactInformation, 
 			count(accountHolder) AS RingSize 
@@ -208,9 +210,10 @@ ORDER BY 	FinancialRisk DESC
 
 //output
 
+==== Analyze Total Balance of Fraud Rings
+
 [source,cypher]
 ----
-==== Analyze Total Balance of Fraud Rings
 
 MATCH (accountHolder:AccountHolder)-[]->(contactInformation) 
 WITH contactInformation, count(accountHolder) AS RingSize 
@@ -227,9 +230,10 @@ ORDER BY TotalBalance DESC
 ----
 //output
 
+==== Analyze Average Loan Amount of Fraud Rings
+
 [source,cypher]
 ----
-==== Analyze Average Loan Amount of Fraud Rings
 
 MATCH (accountHolder:AccountHolder)-[]->(contactInformation) 
 WITH contactInformation, count(accountHolder) AS RingSize 
@@ -246,9 +250,10 @@ ORDER BY AverageLoanAmount DESC
 ----
 //output
 
+==== Visualize Connections Between Fraud Rings and Their Financial Products
+
 [source,cypher]
 ----
-==== Visualize Connections Between Fraud Rings and Their Financial Products
 
 MATCH (accountHolder:AccountHolder)-[]->(contactInformation) 
 WITH contactInformation, count(accountHolder) AS RingSize 
@@ -267,9 +272,10 @@ ORDER BY RingSize DESC
 ----
 //output
 
+==== Determine Total Credit Limits Across Fraud Rings
+
 [source,cypher]
 ----	
-==== Determine Total Credit Limits Across Fraud Rings
 
 MATCH (accountHolder:AccountHolder)-[]->(contactInformation) 
 WITH contactInformation, count(accountHolder) AS RingSize 
@@ -287,3 +293,4 @@ ORDER BY TotalCreditLimit DESC
 ----
 //output
 //table
+
